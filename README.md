@@ -1,47 +1,18 @@
-# 📊 Exam Proctor Dashboard – Silent Mode
+# 📊 Exam Proctor Dashboard – RBAC
 
-Dự án mẫu cho **đề tài khoa học kỹ thuật**:  
-Hệ thống Dashboard giám thị (Streamlit) để phát hiện gian lận trong phòng thi.  
-- **Silent Mode**: chỉ hiển thị cảnh báo, không phát âm thanh → tránh làm ồn học sinh.  
-- **Do Not Disturb (DND)**: tạm dừng cảnh báo khi giám thị phổ biến nội quy.  
-- **Giao diện trực quan**: hiển thị sự kiện theo thời gian, đánh dấu màu theo mức độ (RED, YELLOW, GREEN).
+Demo Dashboard Streamlit có đăng nhập + phân quyền (Admin / Proctor / Viewer).
 
----
+## Tài khoản demo
+- admin1 / admin123 → admin
+- gv01 / proctor123 → proctor (chỉ xem Exam E01)
+- view1 / viewer123 → viewer (read-only)
 
-## 🚀 Chạy trên máy cá nhân
-
-### Cài đặt
+## Chạy local
 ```bash
-git clone https://github.com/<username>/<repo-name>.git
-cd <repo-name>
 pip install -r requirements.txt
+streamlit run app_rbac.py
 ```
 
-### Chạy app
-```bash
-streamlit run app.py
-```
-
-Mở trình duyệt tại: [http://localhost:8501](http://localhost:8501)
-
----
-
-## ☁️ Deploy Online với Streamlit Cloud
-
-1. Push code này lên GitHub (public repo).  
-2. Vào [https://share.streamlit.io](https://share.streamlit.io) → đăng nhập bằng GitHub.  
-3. Chọn repo + branch, chọn file `app.py` để chạy.  
-4. Hệ thống sẽ tự tạo link public dạng:  
-   ```
-   https://<username>-<repo>-<branch>.streamlit.app
-   ```
-
----
-
-## 📂 Cấu trúc repo
-```
-repo-name/
- ├── app.py              # Code Dashboard (Streamlit)
- ├── requirements.txt    # Thư viện cần thiết (streamlit, pandas)
- └── README.md           # Hướng dẫn
-```
+## Deploy
+- Push lên GitHub, deploy với Streamlit Cloud.
+- Hoặc chạy trên Replit.
