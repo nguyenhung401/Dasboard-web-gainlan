@@ -1,0 +1,18 @@
+[
+  {
+    "user": "admin1",
+    "pass_sha256": "240be518fabd2724ddb6f04eeb1da5967448d7e831c08c8fa822809f74c720a9",
+    "role": "admin"
+  },
+  {
+    "user": "gv01",
+    "pass_sha256": "fabefa442bd43d86550ea50319847d6c4e371f7aa9448772a19de203180c595a",
+    "role": "proctor",
+    "exam_scope": "E01"
+  },
+  {
+    "user": "view1",
+    "pass_sha256": "65375049b9e4d7cad6c9ba286fdeb9394b28135a3e84136404cfccfdcc438894",
+    "role": "viewer"
+  }
+]

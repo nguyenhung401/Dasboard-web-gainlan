@@ -1,7 +1,7 @@
-# Exam Proctor Dashboard – RBAC
-- Đăng nhập & phân quyền: admin / proctor / viewer.
-- Demo user: admin1/admin123 · gv01/proctor123 · view1/viewer123
-- Có DND 2 phút, bảng sự kiện (lọc theo phạm vi exam cho proctor).
+# Exam Proctor Dashboard – RBAC + User Management
+- Đăng nhập & phân quyền (admin/proctor/viewer)
+- Quản lý người dùng **trực tiếp trên Dashboard** (admin-only): thêm/sửa/xóa, reset mật khẩu, đổi vai trò, gán exam_scope
+- Lưu người dùng vào **users.json** (persist giữa các lần chạy)
 
 ## Chạy
 ```bash
